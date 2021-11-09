@@ -1,0 +1,27 @@
+{
+	"name": "singleton",
+	"version": "1.0.0",
+	"description": "Singleton Pattern",
+	"main": "main.js",
+	"scripts": {
+		"start": "ts-node-dev src/main.ts",
+		"watch": "ts-node-dev --respawn src/main.ts",
+		"build": "tsc",
+		"serve": "node dist/main --harmony",
+		"test": "jest --watchAll",
+		"coverage": "jest --coverage"
+	},
+	"keywords": [
+		"software",
+		"design",
+		"patterns"
+	],
+	"author": "Isaac Bejarano",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/jest": "^27.0.2",
+		"jest": "^27.3.1",
+		"ts-jest": "^27.0.7",
+		"ts-node-dev": "^1.1.8"
+	}
+}
