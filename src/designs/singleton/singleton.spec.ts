@@ -25,7 +25,7 @@ describe('Singleton class "Logger"', () => {
 	});
 
 	it("disables other instantiations", () => {
-		// make constructor protected (not prov ate) to allow inheritance => !new...
+		// make constructor protected (not private) to allow inheritance => !new...
 	});
 
 	it("must be extensible through inheritance", () => {
