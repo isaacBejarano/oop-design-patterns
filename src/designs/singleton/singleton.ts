@@ -1,8 +1,10 @@
+import { extend } from "@vue/shared";
+
 class Logger {
 	private static prop: any = "any prop";
 	private static instance: Logger;
 
-	private constructor() {}
+	protected constructor() {}
 
 	static getInstance(): Logger {
 		if (!Logger.instance) Logger.instance = new Logger();
