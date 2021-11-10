@@ -12,7 +12,7 @@ describe('Singleton class "Logger"', () => {
 		expect(Logger.getProp).toBeDefined;
 	});
 
-	it("must have only 1 instance", () => {
+	it("must have only 1 instance and 1 global access to it", () => {
 		expect(s1).toBeInstanceOf(Logger);
 		expect(s2).toBeInstanceOf(Logger);
 		expect<Logger>(s1).toBe<Logger>(s2);
@@ -20,5 +20,9 @@ describe('Singleton class "Logger"', () => {
 
 	it("is responsible of defining that instance", () => {
 		expect<Logger>(s1).not.toBe(undefined);
+	});
+
+	it("disables other instantiations", () => {
+		// just don't let constructor be public => !new...
 	});
 });

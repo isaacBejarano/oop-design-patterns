@@ -2,7 +2,7 @@ class Logger {
 	private static prop: any;
 	private static instance: Logger;
 
-	constructor() {}
+	private constructor() {}
 
 	static getInstance(): Logger {
 		if (!Logger.instance) Logger.instance = new Logger();
