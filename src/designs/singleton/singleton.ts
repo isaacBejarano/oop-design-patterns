@@ -1,5 +1,3 @@
-import { extend } from "@vue/shared";
-
 class Logger {
 	private static prop: any = "any prop";
 	private static instance: Logger;
@@ -18,4 +16,13 @@ class Logger {
 	}
 }
 
-export default Logger;
+class SpecialLogger extends Logger {
+	private static ownProp: any = "another prop";
+
+	// getters
+	static get getOwnProp(): string {
+		return SpecialLogger.ownProp;
+	}
+}
+
+export { Logger, SpecialLogger };
