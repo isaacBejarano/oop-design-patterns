@@ -1,5 +1,5 @@
 class Logger {
-	private static prop: any;
+	private static prop: any = "any prop";
 	private static instance: Logger;
 
 	private constructor() {}
