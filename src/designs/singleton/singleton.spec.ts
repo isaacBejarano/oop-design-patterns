@@ -10,4 +10,10 @@ describe('Singleton class "Logger"', () => {
 		let s2 = Logger.getInstance();
 		expect<Logger>(s1).toBe<Logger>(s2);
 	});
+
+	it("is responsible of defining that instance", () => {
+		let s1 = Logger.getInstance();
+		// let s2 = Logger.getInstance();
+		expect<Logger>(s1).not.toBe(undefined);
+	});
 });
