@@ -13,6 +13,8 @@ describe('Singleton class "Logger"', () => {
 	});
 
 	it("must have only 1 instance", () => {
+		expect(s1).toBeInstanceOf(Logger);
+		expect(s2).toBeInstanceOf(Logger);
 		expect<Logger>(s1).toBe<Logger>(s2);
 	});
 

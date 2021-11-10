@@ -1,10 +1,12 @@
 class Logger {
 	private static prop: any;
-	private static instance: Logger = 0;
+	private static instance: Logger;
 
 	constructor() {}
 
 	static getInstance(): Logger {
+		if (!Logger.instance) Logger.instance = new Logger();
+
 		return Logger.instance;
 	}
 
