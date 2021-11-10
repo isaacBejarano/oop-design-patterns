@@ -6,8 +6,8 @@ describe('Singleton class "Logger"', () => {
 	});
 
 	it("must have only 1 instance", () => {
-		const s1 = Logger.getInstance;
-		const s2 = Logger.getInstance;
-		expect(s1).toEqual(s2);
+		let s1 = Logger.getInstance();
+		let s2 = Logger.getInstance();
+		expect<Logger>(s1).toBe<Logger>(s2);
 	});
 });
