@@ -9,10 +9,10 @@ beforeEach(() => {
 
 describe('Singleton class "Logger"', () => {
 	it("may have regular props", () => {
-		expect(Logger.getProp).toBeDefined;
+		expect(Logger.getProp).not.toBe(undefined);
 	});
 
-	it("must have only 1 instance and 1 global access to it", () => {
+	it("must have only 1 instance and 1 global access ['getInstance()'] to it", () => {
 		expect(s1).toBeInstanceOf(Logger);
 		expect(s2).toBeInstanceOf(Logger);
 		expect<Logger>(s1).toBe<Logger>(s2);
