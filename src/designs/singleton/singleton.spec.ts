@@ -1,3 +1,4 @@
 describe('Singleton class "Logger"', () => {
-	it("test should exist ", () => {});
+	it("may have regular props", () => {
+	})
 });
