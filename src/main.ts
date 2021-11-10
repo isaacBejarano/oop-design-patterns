@@ -1,6 +1,6 @@
-// NOTE: UML class diagrams @png @60q @tiny
+// IMPLEMENTATION
 
-console.log("DESIGN PATTERNS"); // IMPLEMENTATION
+console.log("[[ DESIGN PATTERNS ]]");
 
 import { Logger, SpecialLogger } from "./designs/singleton/singleton";
 
